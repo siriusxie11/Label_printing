@@ -145,7 +145,7 @@ export default function InputForm() {
             type="number"
             value={lineHeight}
             onChange={(e) => setLineHeight(Number(e.target.value))}
-            min="1.0"
+            min="0.1"
             step="0.1"
             required
           />

@@ -90,8 +90,8 @@ const useLabelLayout = create<LabelLayoutState>((set, get) => ({
     }
 
     // 检查行距是否合理
-    if (lineHeight < 1.0) {
-      errors.push('行距太小，建议至少为1.0');
+    if (lineHeight < 0.1) {
+      errors.push('行距太小，建议至少为0.1');
     } else if (lineHeight > 3.0) {
       errors.push('行距太大，建议不超过3.0');
     }
